@@ -24,10 +24,10 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 text-3xl sm:text-4xl md:text-6xl"
           >
-            I'm Colin Grégoire <br />{" "}
-            <span className="text-accent">AI Engineer</span>
+            Transforming Ideas
+            <br /> Into <span className="text-accent">Digital Reality</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
