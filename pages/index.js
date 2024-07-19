@@ -64,11 +64,10 @@ const Home = () => {
         <div>
           <ParticlesContainer />
         </div>
-
-        {/* avatar img
-        <div>
+        {/* avatar img */}
+        <div className="w-full h-full max-w-[650px] max-h-[678px] absolute -bottom-16 lg:right-0">
           <Avatar />
-        </div> */}
+        </div>
       </div>
     </div>
   );
