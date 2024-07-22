@@ -28,13 +28,44 @@ export const navData = [
 
 // next Link
 import Link from 'next/link';
-
-// next router
+import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 const Nav = () => {
   const router = useRouter();
   const pathname = router.pathname;
+
+  // Event for mouse scroll up and down (change the page)
+  useEffect(() => {
+    const handleScroll = (e) => {
+      // Determine the direction of the scroll
+      const direction = e.deltaY > 0 ? "down" : "up";
+
+      // Logic to determine next/previous page
+      const currentPageIndex = navData.findIndex(
+        (link) => link.path === pathname
+      );
+      let nextPageIndex =
+        direction === "down" ? currentPageIndex + 1 : currentPageIndex - 1;
+
+      // Ensuring the index stays within the bounds of the array
+      nextPageIndex = Math.max(0, Math.min(navData.length - 1, nextPageIndex));
+
+      // Navigate to next/previous page
+      const nextPage = navData[nextPageIndex];
+      if (nextPage) {
+        router.push(nextPage.path);
+      }
+    };
+
+    // Scroll event listener
+    window.addEventListener("wheel", handleScroll);
+
+    // Clean event listener
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+    };
+  }, [pathname, router]);
 
   return (
     <nav className='flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen'>
