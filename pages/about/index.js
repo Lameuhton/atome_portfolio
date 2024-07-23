@@ -71,7 +71,7 @@ const aboutData = [
     ],
   },
   {
-    title: "credentials",
+    title: "certifications",
     info: [
       {
         title: "Web Development - ABC University, LA, CA",
