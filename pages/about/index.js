@@ -105,8 +105,8 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-      <div>
+    <div className="h-full bg-primary/30 py-32 sm:py-0 text-center xl:text-left">
+      <div className="">
         <ParticlesContainer />
       </div>
       <Circles />
