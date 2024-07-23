@@ -92,6 +92,7 @@ const aboutData = [
 // components
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
+import ParticlesContainer from "../../components/ParticlesContainer";
 
 // framer motion
 import { motion } from "framer-motion";
@@ -105,6 +106,9 @@ const About = () => {
 
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+      <div>
+        <ParticlesContainer />
+      </div>
       <Circles />
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
