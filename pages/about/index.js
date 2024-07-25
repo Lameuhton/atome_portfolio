@@ -20,36 +20,37 @@ import {
 // about data
 const aboutData = [
   {
-    title: "skills",
+    title: "qualities",
     info: [
       {
-        title: "Web Development",
+        title: "",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          "Proactive"
         ],
       },
       {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "",
+        icons: [
+          "Resilient"
+        ],
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "",
+        icons: [
+          "Collaborative"
+        ],
+      },
+      {
+        title: "",
+        icons: [
+          "Curious"
+        ],
+      },
+      {
+        title: "",
+        icons: [
+          "Autonomous"
+        ],
       },
     ],
   },
@@ -120,13 +121,10 @@ const About = () => {
           className="flex-1 flex flex-col justify-center"
         >
           <h2 className="h2 text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-8">
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            A little <span className="text-accent">more</span> about me.
           </h2>
-          <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            10 years ago, I began freelancing as a developer. Since then I've
-            done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use.
+          <p className="max-w-[600px] xl:pr-10 mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+          I'm a computer science enthusiast with a solid foundation from years of higher education. My passion for technology and curiosity about Artificial Intelligence drove me to enroll in Becode's intensive 7-month AI program. This hands-on, self-driven course emphasized self-learning and teamwork, allowing me to develop strong AI skills and collaborate on innovative projects.
           </p>
         </motion.div>
         {/* info */}
@@ -169,12 +167,12 @@ const About = () => {
                 >
                   {/* title */}
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
+                  <div className="hidden md:flex text-accent">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>;
+                      return <div className="text-white/60">{icon}</div>;
                     })}
                   </div>
                 </div>
