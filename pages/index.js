@@ -24,7 +24,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1 text-3xl sm:text-4xl md:text-6xl mb-4 sm:mb-8"
+            className="h1 text-3xl sm:text-4xl md:text-6xl mb-4 sm:mb-8 cursor-default"
           >
             Transforming Ideas
             <br /> Into <span className="text-accent">Digital Reality</span>
@@ -35,7 +35,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 cursor-default"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
             nostrum quam reprehenderit vero, tenetur voluptatem nulla aut
