@@ -77,11 +77,15 @@ const ServiceSlider = () => {
     <Swiper
       breakpoints={{
         320: {
-          slidesPerView: 1,
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        480: {
+          slidesPerView: 4,
           spaceBetween: 15,
         },
         640: {
-          slidesPerView: 3,
+          slidesPerView: 5,
           spaceBetween: 15,
         },
       }}
@@ -90,27 +94,25 @@ const ServiceSlider = () => {
         clickable: true,
       }}
       modules={[FreeMode, Pagination]}
-      className="h-[280px] sm:h-[340px]"
+      className="h-[200px]"
     >
-      {
-        serviceData.map((item,index) => {
-          return (
-            <SwiperSlide key={index}>
-              <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex flex-col items-center sm:items-start gap-x-6 sm:gap-x-0 group  transition-all duration-300">
-                {/* icon */}
-                <div className="cursor-default text-6xl text-accent mb-4">
-                  {item.icon}
-                </div>
-                {/* title & desc */}
-                <div className="cursor-default flex flex-col items-center sm:items-start">
+      {serviceData.map((item, index) => {
+        return (
+          <SwiperSlide key={index}>
+            <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-8 py-8 flex flex-col items-center justify-center gap-x-6 sm:gap-x-0 group  transition-all duration-300">
+              {/* icon */}
+              <div className="cursor-default flex flex-col items-center justify-center h-full text-6xl text-accent">
+                {item.icon}
+              </div>
+              {/* title & desc */}
+              {/* <div className="cursor-default flex flex-col items-center sm:items-start">
                   <div className="text-lg mb-2">{item.title}</div>
                   <p>{item.description}</p>
-                </div>
-              </div>
-            </SwiperSlide>
-          );
-        })
-      }
+                </div> */}
+            </div>
+          </SwiperSlide>
+        );
+      })}
     </Swiper>
   );
 };
