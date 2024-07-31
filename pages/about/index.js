@@ -86,12 +86,11 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 sm:py-0 text-center xl:text-left">
+    <div className="mt-28 h-full flex items-center text-center xl:text-left">
       <div>
         <ParticlesContainer />
       </div>
-      <Circles />
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto  flex flex-col items-center xl:flex-row gap-x-6 mb-28">
         {/* text */}
         <motion.div
           variants={fadeIn("down", 0.2)}
@@ -104,7 +103,10 @@ const About = () => {
             A little <span className="text-accent">more</span> about me.
           </h2>
           <p className="max-w-[600px] xl:pr-10 mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-          I'm a computer science enthusiast with a solid foundation from years of higher education. My passion for technology and curiosity about Artificial Intelligence drove me to enroll in Becode's intensive 7-month AI program. This hands-on, self-driven course emphasized self-learning and teamwork, allowing me to develop strong AI skills and collaborate on innovative projects.
+            I'm a computer science enthusiast with a strong educational
+            background. My passion for technology led me to start Becode's
+            intensive 7-month AI program, focusing on self-learning, teamwork,
+            and innovative projects.
           </p>
         </motion.div>
         {/* info */}
