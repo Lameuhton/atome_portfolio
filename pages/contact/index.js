@@ -10,7 +10,16 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../../variants";
 
+// formspree
+import { useForm, ValidationError } from "@formspree/react";
+
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xgvwkkjo");
+
+  if (state.succeeded) {
+    alert("Message submitted!");
+  }
+
   return (
     <div className=" pt-28 md:py-20 h-[80vh] md:h-full flex items-center">
       <Circles />
@@ -58,34 +67,47 @@ const Contact = () => {
               animate="show"
               exit="hidden"
               className="flex-1 flex flex-col gap-4 w-full"
+              onSubmit={handleSubmit}
             >
               {/* input group */}
               <div className="flex gap-x-6 w-full">
                 <input
+                  id="name"
+                  name="name"
                   type="text"
                   placeholder="name"
                   className="input"
                   required
                 />
                 <input
-                  type="text"
+                  id="email"
+                  name="email"
+                  type="email"
                   placeholder="email"
                   className="input"
                   required
                 />
               </div>
               <input
+                id="subject"
+                name="subject"
                 type="text"
                 placeholder="subject"
                 className="input"
                 required
               />
               <textarea
+                id="message"
+                name="message"
                 placeholder="message"
                 className="textarea"
-                requiredq
+                required
               ></textarea>
-              <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+              <button
+                type="submit"
+                disabled={state.submitting}
+                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+              >
                 <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                   Contact me
                 </span>
@@ -96,7 +118,6 @@ const Contact = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
