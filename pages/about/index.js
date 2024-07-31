@@ -1,22 +1,5 @@
 import React, { useState } from "react";
 
-// icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
-
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
-
 // about data
 const aboutData = [
   {
@@ -98,8 +81,6 @@ import ParticlesContainer from "../../components/ParticlesContainer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
-// counter
-import CountUp from 'react-countup';
 
 const About = () => {
   const [index, setIndex] = useState(0);
