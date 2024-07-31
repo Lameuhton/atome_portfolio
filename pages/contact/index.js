@@ -12,7 +12,7 @@ import { fadeIn } from "../../variants";
 
 const Contact = () => {
   return (
-    <div className="bg-primary/30 py-28 md:py-20 md:h-full flex items-center">
+    <div className="pt-28 md:py-20 h-[80vh] md:h-full flex items-center">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row gap-x-12">
@@ -96,6 +96,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+
   );
 };
 
