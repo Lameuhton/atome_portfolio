@@ -41,11 +41,11 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Ai Engineer training, Becode",
+        stage: "July 2024 - now",
       },
       {
-        title: "Web Developer - ABC Agency",
+        title: "Student Job, Huggy's Bar",
         stage: "2010 - 2012",
       },
       {
@@ -58,16 +58,8 @@ const aboutData = [
     title: "certifications",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "",
+        stage: "Coming soon...",
       },
     ],
   },
