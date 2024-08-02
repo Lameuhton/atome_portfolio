@@ -17,24 +17,27 @@ const Socials = () => {
       >
         <RiAtLine />
       </Link>
-      <Link
+      <a
+        target="_blank"
         href={"https://www.linkedin.com/in/colingregoire"}
         className="hover:text-accent transition-all duration-300"
       >
         <RiLinkedinLine />
-      </Link>
-      <Link
+      </a>
+      <a
+        target="_blank"
         href={"https://github.com/Atome1212"}
         className="hover:text-accent transition-all duration-300"
       >
         <RiGithubLine />
-      </Link>
-      <Link
+      </a>
+      <a
+        target="_blank"
         href={"https://discord.gg/ZSNWMFr3xg"}
         className="hover:text-accent transition-all duration-300"
       >
         <RiDiscordLine />
-      </Link>
+      </a>
     </div>
   );
 };
