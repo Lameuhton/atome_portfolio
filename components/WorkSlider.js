@@ -1,22 +1,22 @@
 // service data
 const serviceData = [
   {
-    title: "AI Web Scraper",
+    title: "Immo Eliza Regression",
     description:
-      "A powerful AI-based web scraper that can extract data from any website with ease.",
-    github: "https://github.com/username/ai-web-scraper",
+      "This project aims to predict real estate prices using machine learning models.",
+    github: "https://github.com/Atome1212/immo_eliza_regression",
   },
   {
-    title: "Machine Learning Pipeline",
+    title: "Immo Property Data Analysis",
     description:
-      "A scalable machine learning pipeline using Python and TensorFlow.",
-    github: "https://github.com/username/ml-pipeline",
+      "This group project involves the cleaning and analysis of a dataset.",
+    github: "https://github.com/Atome1212/immo_eliza_analysis",
   },
   {
-    title: "Data Visualization Tool",
+    title: "Immoweb Scraper",
     description:
-      "An interactive tool for visualizing complex datasets using D3.js.",
-    github: "https://github.com/username/data-viz-tool",
+      "This project is designed to scrape property information from the Immoweb website.",
+    github: "https://github.com/Atome1212/Scraper_immoweb",
   },
   {
     title: "NLP Text Analyzer",
@@ -101,7 +101,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[FreeMode, Pagination]}
-      className="h-[220px] sm:h-[300px]"
+      className="h-[250px] sm:h-[310px] xl:h-[330px]"
     >
       {serviceData.map((item, index) => {
         return (
@@ -117,9 +117,17 @@ const WorkSlider = () => {
                 <p>{item.description}</p>
               </div>
               {/* overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#FF6347] via-[#FF4500] to-[#FF0000] opacity-0 group-hover:opacity-80 transition-opacity duration-700"></div>
+              <a
+                href={item.github}
+                target="_blank"
+                className="absolute inset-0 bg-gradient-to-r from-[#FF6347] via-[#FF4500] to-[#FF0000] opacity-0 group-hover:opacity-80 transition-opacity duration-700"
+              ></a>
               {/* title */}
-              <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-28 transition-all duration-300">
+              <a
+                href={item.github}
+                target="_blank"
+                className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-28 transition-all duration-300"
+              >
                 <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
                   {/* title part 1 */}
                   <div className="delay-100">SEE</div>
@@ -132,7 +140,7 @@ const WorkSlider = () => {
                     <BsArrowRight />
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </SwiperSlide>
         );

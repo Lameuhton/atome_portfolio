@@ -37,9 +37,8 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 cursor-default"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            nostrum quam reprehenderit vero, tenetur voluptatem nulla aut
-            aspernatur dolores ut.
+            I am a technology enthusiast currently training to become an
+            Artificial Intelligence Engineer at BeCode.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
