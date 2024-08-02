@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // icons
 import {
@@ -20,7 +21,7 @@ import {
 import { TbSql } from "react-icons/tb";
 
 // import required modules
-import { FreeMode, Pagination } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 // import { imageOptimizer } from "next/dist/server/image-optimizer";
 
 // service data
@@ -89,12 +90,16 @@ const ServiceSlider = () => {
           spaceBetween: 15,
         },
       }}
-      freeMode={true}
+      autoplay={{
+        delay: 1500,
+        disableOnInteraction: false,
+      }}
       pagination={{
         clickable: true,
       }}
-      modules={[FreeMode, Pagination]}
-      className="h-[200px]"
+      navigation={true}
+      modules={[Pagination, Navigation, Autoplay]}
+      className="h-[170px]"
     >
       {serviceData.map((item, index) => {
         return (
