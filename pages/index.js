@@ -41,7 +41,7 @@ const Home = () => {
             Artificial Intelligence Engineer at BeCode.
           </motion.p>
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative z-10">
             <ProjectsBtn />
           </div>
           <motion.div
@@ -49,7 +49,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
+            className="hidden xl:flex z-10"
           >
             <ProjectsBtn />
           </motion.div>

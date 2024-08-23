@@ -2,7 +2,6 @@
 import ServiceSlider from "../../components/ServiceSlider";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
-import ParticlesContainer from "../../components/ParticlesContainer";
 
 // framer motion
 import { motion } from "framer-motion";
@@ -25,16 +24,6 @@ const Skills = () => {
             >
               Tech skills <span className="text-accent">.</span>
             </motion.h2>
-            {/* <motion.p
-              variants={fadeIn("up", 0.4)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 cursor-default"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </motion.p> */}
           </div>
           <motion.div
             variants={fadeIn("up", 0.6)}
