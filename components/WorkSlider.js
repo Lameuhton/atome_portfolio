@@ -1,6 +1,12 @@
 // service data
 const serviceData = [
   {
+    title: "Immo API",
+    description:
+      "This project aims to predict real estate prices using a pre-trained machine learning model.",
+    github: "https://github.com/Atome1212/immo_api",
+  },
+  {
     title: "Immo Eliza Regression",
     description:
       "This project aims to predict real estate prices using machine learning models.",
@@ -31,7 +37,6 @@ const serviceData = [
     github: "https://github.com/username/deep-learning-model",
   },
   {
-    icon: <FaHtml5 />,
     title: "Predictive Analytics",
     description:
       "A predictive analytics tool for forecasting trends using machine learning.",
