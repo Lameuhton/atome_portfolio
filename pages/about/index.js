@@ -41,16 +41,16 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Ai Engineer training, Becode",
-        stage: "July 2024 - now",
+        title: "Ai Engineer training, Becode Liège",
+        stage: "June 2024 - now",
       },
       {
-        title: "Student Job, Huggy's Bar",
-        stage: "2010 - 2012",
+        title: "Student Job, Huggy's Bar Soumagne",
+        stage: "2021 - 2024",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Student Job, Vibio Soumagne",
+        stage: "2018 - 2021",
       },
     ],
   },
