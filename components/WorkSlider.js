@@ -1,6 +1,12 @@
 // work data
 const workData = [
   {
+    title: "Wine Market Analysis",
+    description:
+      "This project analyzes the wine market using SQL for data extraction and Streamlit for visualizations.",
+    github: "https://github.com/benozfirat/wine-market-analysis",
+  },
+  {
     title: "Immo API",
     description:
       "This project aims to predict real estate prices using a pre-trained machine learning model.",
@@ -23,24 +29,6 @@ const workData = [
     description:
       "This project is designed to scrape property information from the Immoweb website.",
     github: "https://github.com/Atome1212/Scraper_immoweb",
-  },
-  {
-    title: "NLP Text Analyzer",
-    description:
-      "A natural language processing tool for sentiment analysis and text classification.",
-    github: "https://github.com/username/nlp-text-analyzer",
-  },
-  {
-    title: "Deep Learning Model",
-    description:
-      "A state-of-the-art deep learning model for image recognition.",
-    github: "https://github.com/username/deep-learning-model",
-  },
-  {
-    title: "Predictive Analytics",
-    description:
-      "A predictive analytics tool for forecasting trends using machine learning.",
-    github: "https://github.com/username/predictive-analytics",
   },
 ];
 
