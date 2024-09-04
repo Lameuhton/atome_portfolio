@@ -3,7 +3,7 @@ import Image from "next/image";
 
 // components
 import ParticlesContainer from "../components/ParticlesContainer";
-import ProjectsBtn from "../components/ProjectsBtn";
+import StarBtn from "../components/StarBtn";
 import Avatar from "../components/Avatar";
 
 // framer motion
@@ -42,7 +42,7 @@ const Home = () => {
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative z-10">
-            <ProjectsBtn />
+            <StarBtn path="/work" img="/Get-my-cv.png" right={false} />
           </div>
           <motion.div
             variants={fadeIn("down", 0.4)}
@@ -51,7 +51,7 @@ const Home = () => {
             exit="hidden"
             className="hidden xl:flex z-10"
           >
-            <ProjectsBtn />
+            <StarBtn path="/work" img="/Get-my-cv.png" right={false} />
           </motion.div>
         </div>
       </div>

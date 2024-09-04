@@ -68,6 +68,7 @@ const aboutData = [
 // components
 import Circles from "../../components/Circles";
 import ParticlesContainer from "../../components/ParticlesContainer";
+import StarBtn from "../../components/StarBtn";
 
 // framer motion
 import { motion } from "framer-motion";
