@@ -42,7 +42,12 @@ const Home = () => {
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative z-10">
-            <StarBtn path="/work" img="/Get-my-cv.png" right={false} />
+            <StarBtn
+              path="/cv.pdf"
+              img="/Get-my-cv.png"
+              right={false}
+              download={true}
+            />
           </div>
           <motion.div
             variants={fadeIn("down", 0.4)}
@@ -51,7 +56,12 @@ const Home = () => {
             exit="hidden"
             className="hidden xl:flex z-10"
           >
-            <StarBtn path="/work" img="/Get-my-cv.png" right={false} />
+            <StarBtn
+              path="/cv.pdf"
+              img="/Get-my-cv.png"
+              right={false}
+              download={true}
+            />
           </motion.div>
         </div>
       </div>

@@ -8,12 +8,13 @@ import Link from "next/link";
 import { HiArrowRight } from 'react-icons/hi2'
 import { BsDownload } from "react-icons/bs";
 
-const StarBtn = ({path, img, right}) => {
+const StarBtn = ({path, img, right, download}) => {
   return (
     <div className="mx-auto xl:mx-0">
       <Link
         href={path}
         className="relative w-[140px] h-[140px] sm:w-[185px] sm:h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
+        {...(download ? { download: true } : {})}
       >
         <Image
           src={img}
